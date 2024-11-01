@@ -1,0 +1,104 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+#maze {
+    display: grid;
+    width: 400px; /* Fixed width for the maze */
+    height: 400px; /* Fixed height for the maze */
+}
+
+.cell {
+    background-color: #f0f0f0;
+}
+
+.wall {
+    background-color: #000;
+}
+
+.player {
+    background-color: #00f;
+}
+
+.goal {
+    background-color: #0f0;
+}
+
+#controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.arrow-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.arrow-button {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    background-color: #8B0000; /* Dark red */
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.arrow-button:hover {
+    background-color: #A52A2A; /* Lighter dark red */
+}
+
+.arrow-button:active {
+    transform: scale(0.95);
+}
+
+button {
+    background-color: #8B0000; /* Dark red */
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+button:hover {
+    background-color: #A52A2A; /* Lighter dark red */
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.size-selector {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.size-display {
+    width: 60px;
+    padding: 5px;
+    background-color: #8B0000; /* Dark red */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+}

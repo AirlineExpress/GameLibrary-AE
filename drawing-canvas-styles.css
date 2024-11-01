@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.drawing-canvas-game {
+    text-align: center;
+}
+
+canvas {
+    border: 2px solid #ffffff;
+    background-color: #ffffff;
+    cursor: crosshair;
+    width: 400px; /* Fixed width to match the maze */
+    height: 400px; /* Fixed height to match the maze */
+}
+
+.button-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #8B0000; /* Dark red */
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+button:hover {
+    background-color: #A52A2A; /* Lighter dark red */
+}
+
+button:active {
+    transform: scale(0.95);
+}
