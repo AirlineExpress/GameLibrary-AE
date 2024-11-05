@@ -6,10 +6,12 @@ let drawing = false;
 canvas.addEventListener('mousedown', startDrawing);
 canvas.addEventListener('mouseup', stopDrawing);
 canvas.addEventListener('mousemove', draw);
+canvas.addEventListener('mouseleave', stopDrawing); // Stop drawing when mouse leaves canvas
 
 canvas.addEventListener('touchstart', startDrawing);
 canvas.addEventListener('touchend', stopDrawing);
 canvas.addEventListener('touchmove', draw);
+canvas.addEventListener('touchcancel', stopDrawing); // Stop drawing when touch leaves canvas
 
 function startDrawing(e) {
     drawing = true;
